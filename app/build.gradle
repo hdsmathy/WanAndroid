@@ -47,6 +47,4 @@ dependencies {
     implementation app_dependencies.rxjava
     implementation app_dependencies.rxlifecycle2
     implementation app_dependencies.rxlifecycle_components
-
-
 }
