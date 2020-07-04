@@ -6,7 +6,7 @@ apply plugin: 'kotlin-android-extensions'
 
 def app_android = rootProject.ext.android
 def app_dependencies = rootProject.ext.dependencies
-def BASEURL="BASE_URL"
+def BASEURL = "BASE_URL"
 
 android {
 
@@ -35,8 +35,11 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation app_dependencies.junit
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.annotation:annotation:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
     androidTestImplementation app_dependencies.espresso_core
     implementation app_dependencies.kotlin
     implementation app_dependencies.appcompat

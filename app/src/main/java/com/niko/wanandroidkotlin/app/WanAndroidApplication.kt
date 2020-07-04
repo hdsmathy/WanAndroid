@@ -4,7 +4,7 @@ import android.app.Application
 
 /**
  * @ClassName: WanAndroidApplication
- * @Description: kotlin文件作用描述
+ * @Description: Application类
  * @Author: Niko
  * @Date: 2020/7/4 17:04
  */ 
