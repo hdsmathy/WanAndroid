@@ -16,6 +16,7 @@ class LoginActivity : MvpBaseActivity<LoginPresenter>(), ILoginView {
     override fun getPresenter(): LoginPresenter  = LoginPresenter()
 
     override fun initWidget() {
+
     }
 
     override fun getLayoutId(): Int = R.layout.activity_login

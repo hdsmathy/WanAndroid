@@ -12,9 +12,6 @@ import com.niko.wanandroidkotlin.base.BaseView
  */
 class LoginPresenter : BasePresenter<BaseView>(), ILoginPresenter {
 
-    override fun attachView(view: BaseView) {
-
-    }
 
     override fun login(username: String, password: String) {
 
