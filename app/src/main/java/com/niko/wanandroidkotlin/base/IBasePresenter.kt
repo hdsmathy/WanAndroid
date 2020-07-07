@@ -1,9 +1,7 @@
 package com.niko.wanandroidkotlin.base
 
-interface IBasePresenter<T> {
+interface IBasePresenter {
 
-
-    fun attachView(view: T)
 
     fun detchView()
 }

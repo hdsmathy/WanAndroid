@@ -1,6 +1,7 @@
 package com.niko.wanandroidkotlin.ui.login
 
 import com.niko.wanandroidkotlin.base.IBaseModel
+import com.niko.wanandroidkotlin.base.IBasePresenter
 import com.niko.wanandroidkotlin.base.IBaseView
 import com.niko.wanandroidkotlin.bean.LoginBean
 
@@ -19,7 +20,7 @@ interface ILoginView : IBaseView {
     fun loginFilure(msg: String)
 }
 
-interface ILoginPresenter {
+interface ILoginPresenter : IBasePresenter {
 
     fun login(username: String, password: String)
 }

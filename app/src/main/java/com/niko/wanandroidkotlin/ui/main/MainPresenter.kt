@@ -1,7 +1,5 @@
 package com.niko.wanandroidkotlin.ui.main
 
-import com.niko.wanandroidkotlin.base.BasePresenter
-
 /**
  *
  * @Description: 文件描述
@@ -9,7 +7,10 @@ import com.niko.wanandroidkotlin.base.BasePresenter
  * @Date: 2020-07-07
  *
  */
-class MainPresenter : BasePresenter<IMainView>(), IMainPresenter {
+class MainPresenter :  IMainPresenter {
+    override fun detchView() {
+
+    }
 
 
 }

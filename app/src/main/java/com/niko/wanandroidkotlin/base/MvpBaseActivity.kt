@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
  * @Date: 2020-07-04
  *
  */
-abstract class MvpBaseActivity<P : BasePresenter> : AppCompatActivity(), IBaseView {
+abstract class MvpBaseActivity<P : IBasePresenter> : AppCompatActivity(), IBaseView {
 
     var mPresenter: P? = null
 

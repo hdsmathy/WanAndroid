@@ -1,7 +1,5 @@
 package com.niko.wanandroidkotlin.ui.login
 
-import com.niko.wanandroidkotlin.base.BasePresenter
-
 /**
  *
  * @Description: 文件描述
@@ -9,7 +7,11 @@ import com.niko.wanandroidkotlin.base.BasePresenter
  * @Date: 2020-07-04
  *
  */
-class LoginPresenter : BasePresenter<ILoginView>(), ILoginPresenter {
+class LoginPresenter(var loginView: ILoginView?) : ILoginPresenter {
+
+    override fun detchView() {
+        loginView = null
+    }
 
 
     override fun login(username: String, password: String) {

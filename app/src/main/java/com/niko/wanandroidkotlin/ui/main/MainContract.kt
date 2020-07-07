@@ -1,6 +1,7 @@
 package com.niko.wanandroidkotlin.ui.main
 
 import com.niko.wanandroidkotlin.base.IBaseModel
+import com.niko.wanandroidkotlin.base.IBasePresenter
 import com.niko.wanandroidkotlin.base.IBaseView
 
 /**
@@ -11,12 +12,12 @@ import com.niko.wanandroidkotlin.base.IBaseView
  *
  */
 
-interface IMainView :IBaseView{
+interface IMainView : IBaseView {
 
 }
 
 
-interface IMainPresenter{
+interface IMainPresenter : IBasePresenter {
 
 }
 

@@ -13,7 +13,7 @@ import com.niko.wanandroidkotlin.bean.LoginBean
  */
 class LoginActivity : MvpBaseActivity<LoginPresenter>(), ILoginView {
 
-    override fun getPresenter(): LoginPresenter  = LoginPresenter()
+    override fun getPresenter(): LoginPresenter = LoginPresenter(this)
 
     override fun initWidget() {
 
