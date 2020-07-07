@@ -7,12 +7,12 @@ package com.niko.wanandroidkotlin.base
  * @Date: 2020-07-04
  *
  */
-abstract class BasePresenter<in V : IBaseView> : IBasePresenter<IBaseView> {
+abstract class BasePresenter<V : IBaseView> : IBasePresenter<V> {
 
     private var mView: V? = null
 
-    override fun attachView(view: IBaseView) {
-        mView = view as V
+    override fun attachView(view: V) {
+        mView = view
     }
 
     override fun detchView() {

@@ -1,7 +1,6 @@
 package com.niko.wanandroidkotlin.ui.login
 
 import com.niko.wanandroidkotlin.base.IBaseModel
-import com.niko.wanandroidkotlin.base.IBasePresenter
 import com.niko.wanandroidkotlin.base.IBaseView
 import com.niko.wanandroidkotlin.bean.LoginBean
 

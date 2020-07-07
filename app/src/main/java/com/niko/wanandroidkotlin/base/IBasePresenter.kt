@@ -1,6 +1,6 @@
 package com.niko.wanandroidkotlin.base
 
-interface IBasePresenter<in T : IBaseView> {
+interface IBasePresenter<T> {
 
 
     fun attachView(view: T)
