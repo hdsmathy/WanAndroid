@@ -1,7 +1,6 @@
 package com.niko.wanandroidkotlin.ui.login
 
 import com.niko.wanandroidkotlin.base.BasePresenter
-import com.niko.wanandroidkotlin.base.BaseView
 
 /**
  *
@@ -10,7 +9,7 @@ import com.niko.wanandroidkotlin.base.BaseView
  * @Date: 2020-07-04
  *
  */
-class LoginPresenter : BasePresenter<BaseView>(), ILoginPresenter {
+class LoginPresenter : BasePresenter<ILoginView>(), ILoginPresenter {
 
 
     override fun login(username: String, password: String) {
