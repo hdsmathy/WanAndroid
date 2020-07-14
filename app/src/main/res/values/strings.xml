@@ -9,4 +9,7 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="flow_layout">流式布局</string>
+    <string name="scroll_layout">实现淘宝京东二级滑动</string>
+    <string name="today">今日头条</string>
 </resources>

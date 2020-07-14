@@ -1,6 +1,7 @@
 package com.niko.wanandroidkotlin.base
 
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
@@ -18,12 +19,9 @@ abstract class MvpBaseActivity<P : IBasePresenter> : AppCompatActivity(), IBaseV
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(getLayoutId())
-        hideActionBar()
         initWidget()
         mPresenter = getPresenter()
     }
-
-    fun hideActionBar() = supportActionBar?.hide()
 
     abstract fun getPresenter(): P
 
@@ -42,6 +40,15 @@ abstract class MvpBaseActivity<P : IBasePresenter> : AppCompatActivity(), IBaseV
             mPresenter?.detchView()
             mPresenter = null
         }
+    }
+
+    fun setOnClickListener(vararg view: View, listener: View.OnClickListener) {
+        view.forEach { v ->
+            v.setOnClickListener(listener)
+        }
+        /*for (v in view) {
+            v.setOnClickListener(listener)
+        }*/
     }
 
 }
