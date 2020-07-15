@@ -6,9 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".ui.study.TextActivity">
 
-    <com.niko.wanandroidkotlin.widget.SimpleColorChangeText
+    <com.niko.wanandroidkotlin.widget.SimpleColorChangeText3
         android:id="@+id/tv_change"
+        android:visibility="visible"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+    <com.niko.wanandroidkotlin.widget.SimpleColorChangeTextView1
+        android:id="@+id/tv_change1"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.niko.wanandroidkotlin.widget.DynamicChangeTextColor
+        android:id="@+id/tv_change2"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
